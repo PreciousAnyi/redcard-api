@@ -115,7 +115,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -172,3 +171,10 @@ SWAGGER_SETTINGS = {
     # 'USE_SESSION_AUTH': False,  # Disable Django Rest Framework login/logout views
     'JSON_EDITOR': True,  # Enable the JSON editor in the Swagger UI
 }
+
+# default static files settings for PythonAnywhere.
+# see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
+MEDIA_ROOT = '/home/PreciousAnyi/REDCARD_API/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/PreciousAnyi/REDCARD_API/static'
+STATIC_URL = '/static/'
